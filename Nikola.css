@@ -1,0 +1,44 @@
+body {
+    font-family: arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+main {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 3px 3px;
+    margin: auto;
+    text-align: center;
+}
+
+#description {
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#title {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#image {
+   max-width: 100%;
+   display: block;
+}
+
+#img-div {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+#img-caption {
+    font-size: 14px;
+    text-align: center;
+}
+ul {
+    display: block;
+}
