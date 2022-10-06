@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="Nicola.css">
+				<!-- stylesheet wasn't loading -->
+        <link rel="stylesheet" href="Nikola.css">
         <title id="Nikola-Tesla">Nikola Tesla Tribute</title>
     </head>
     <body>
@@ -10,13 +11,16 @@
             <h1 id="title">Nikola Tesla</h1>
             <p id="description">Nikola Tesla, a Serbian-American inventor, was best known for his contribution to the design of the modern alternating current electricity supply system.</p>
             <figure id="img-div">
-                <img id="image" src="NikolaTesla1.jpg" alt="A multiple exposure picture of Tesla sitting next to his "magnifying transmitter" generating millions of volts. The 7-metre (23 ft) long arcs were not part of the normal operation, but only produced for effect by rapidly cycling the power switch."/>
+								<!-- escaped quotation marks inside of quoted alt attribute -->
+                <img id="image" src="NikolaTesla1.jpg" alt="A multiple exposure picture of Tesla sitting next to his &quot;magnifying transmitter&quot; generating millions of volts. The 7-metre (23 ft) long arcs were not part of the normal operation, but only produced for effect by rapidly cycling the power switch."/>
             <figcaption id="img-caption">A multiple exposure picture of Tesla sitting next to his "magnifying transmitter" generating millions of volts. The 7-metre (23 ft) long arcs were not part of the normal operation, but only produced for effect by rapidly cycling the power switch.</figcaption>
             </figure>
-            <div id="tribute info>
+						<!-- added closing quotation mark -->
+            <div id="tribute info">
                 <h2 id="subtitle">Here's a timeline of Nikola Tesla's life:</h2>
                 <ul>
-                    <li><strong>1859:</strong> Nikola Tesla is born.</li>
+										<!-- using flex, the content below reads as 2 elements and they are pressed together, so non-breaking space added to create a space between -->
+                    <li><strong>1859:</strong>&nbsp;Nikola Tesla is born.</li>
                 </ul>
             </div>
         </main>     

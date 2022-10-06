@@ -40,5 +40,28 @@ main {
     text-align: center;
 }
 ul {
-    display: block;
+		/* Create flex display to remove full width */
+    display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* default padding and margin are for ::marker, we are doing this manually */
+		padding: 0 0 0 8px;
+		margin: 0;
+}
+
+li {
+	/* display flex to pull width of element in to fit content */
+	display: flex;
+	justify-content: center;
+	/* position relative so we can absolutely position the bullet */
+	position: relative;
+}
+
+/* Bullet element */
+li::before {
+	/* bullet CSS code: see https://www.htmlsymbols.xyz/unicode/U+2022 */
+	content: '\2022';
+	/* positioning the bullet directly to the left of the content */
+	position: absolute;
+	left: -8px;
 }
